@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_custom_price_options",
+  "info": {
+    "name": "price_option",
+    "icon": "dollar-sign"
+  },
+  "options": {},
+  "attributes": {
+    "option": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}
