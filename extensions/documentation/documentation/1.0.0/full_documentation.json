@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/02/2021 10:42:40 PM"
+    "x-generation-date": "02/28/2021 3:26:44 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4251,6 +4251,73 @@
                 }
               }
             }
+          },
+          "image": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -4276,14 +4343,14 @@
       "Product": {
         "required": [
           "id",
-          "title",
+          "name",
           "images"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "title": {
+          "name": {
             "type": "string"
           },
           "images": {
@@ -4412,14 +4479,10 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "title"
+                "id"
               ],
               "properties": {
                 "id": {
-                  "type": "string"
-                },
-                "title": {
                   "type": "string"
                 },
                 "sub_catalogs": {
@@ -4433,6 +4496,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "name": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -4456,10 +4522,10 @@
       },
       "NewProduct": {
         "required": [
-          "title"
+          "name"
         ],
         "properties": {
-          "title": {
+          "name": {
             "type": "string"
           },
           "slug": {
@@ -4552,14 +4618,10 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "title"
+                "id"
               ],
               "properties": {
                 "id": {
-                  "type": "string"
-                },
-                "title": {
                   "type": "string"
                 },
                 "sub_catalogs": {
@@ -4573,6 +4635,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "name": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -4601,6 +4666,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "image": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -4640,14 +4708,10 @@
       },
       "Tag": {
         "required": [
-          "id",
-          "title"
+          "id"
         ],
         "properties": {
           "id": {
-            "type": "string"
-          },
-          "title": {
             "type": "string"
           },
           "sub_catalogs": {
@@ -4689,14 +4753,14 @@
             "items": {
               "required": [
                 "id",
-                "title",
+                "name",
                 "images"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "title": {
+                "name": {
                   "type": "string"
                 },
                 "images": {
@@ -4740,17 +4804,14 @@
                 }
               }
             }
+          },
+          "name": {
+            "type": "string"
           }
         }
       },
       "NewTag": {
-        "required": [
-          "title"
-        ],
         "properties": {
-          "title": {
-            "type": "string"
-          },
           "sub_catalogs": {
             "type": "array",
             "items": {
@@ -4762,6 +4823,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "name": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

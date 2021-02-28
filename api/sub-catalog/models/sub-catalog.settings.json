@@ -19,8 +19,8 @@
       "collection": "tag"
     },
     "categories": {
-      "collection": "category",
-      "via": "sub_categories"
+      "via": "sub_categories",
+      "collection": "category"
     }
   }
 }

@@ -11,9 +11,10 @@
     "draftAndPublish": false
   },
   "attributes": {
-    "title": {
+    "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "private": false
     },
     "images": {
       "collection": "file",
@@ -25,8 +26,7 @@
       "required": true
     },
     "slug": {
-      "type": "uid",
-      "targetField": "title"
+      "type": "uid"
     },
     "custom_field": {
       "type": "component",
@@ -47,8 +47,8 @@
       "component": "custom.price-option"
     },
     "tags": {
-      "via": "products",
       "collection": "tag",
+      "via": "products",
       "dominant": true
     },
     "article": {

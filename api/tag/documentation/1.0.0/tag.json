@@ -516,14 +516,10 @@
     "schemas": {
       "Tag": {
         "required": [
-          "id",
-          "title"
+          "id"
         ],
         "properties": {
           "id": {
-            "type": "string"
-          },
-          "title": {
             "type": "string"
           },
           "sub_catalogs": {
@@ -565,14 +561,14 @@
             "items": {
               "required": [
                 "id",
-                "title",
+                "name",
                 "images"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "title": {
+                "name": {
                   "type": "string"
                 },
                 "images": {
@@ -616,17 +612,14 @@
                 }
               }
             }
+          },
+          "name": {
+            "type": "string"
           }
         }
       },
       "NewTag": {
-        "required": [
-          "title"
-        ],
         "properties": {
-          "title": {
-            "type": "string"
-          },
           "sub_catalogs": {
             "type": "array",
             "items": {
@@ -638,6 +631,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "name": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

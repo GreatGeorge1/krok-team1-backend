@@ -542,14 +542,10 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "title"
+                "id"
               ],
               "properties": {
                 "id": {
-                  "type": "string"
-                },
-                "title": {
                   "type": "string"
                 },
                 "sub_catalogs": {
@@ -563,6 +559,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "name": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -591,6 +590,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "image": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
