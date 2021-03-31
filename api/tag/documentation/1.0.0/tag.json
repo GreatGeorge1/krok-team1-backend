@@ -584,7 +584,12 @@
                   "type": "component"
                 },
                 "status": {
-                  "type": "string"
+                  "type": "string",
+                  "enum": [
+                    "available",
+                    "not_in_stock",
+                    "on_sale"
+                  ]
                 },
                 "price_option": {
                   "type": "component"
